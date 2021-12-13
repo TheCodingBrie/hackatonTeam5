@@ -1,0 +1,40 @@
+.mainPage {
+  font-family: "Rochester", cursive;
+  background-image: url(./Images/xmas-banner-pic.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: white;
+}
+.logo {
+  float: left;
+  width: 50px;
+  height: 50px;
+  background-image: url(./Images/logo.png);
+  background-size: cover;
+  border-radius: 50%;
+  margin: 10px;
+}
+.welcome-text {
+  width: 35%;
+  float: left;
+  text-align: left;
+  padding-left: 50px;
+  padding-top: 50px;
+}
+h1 {
+  font-size: 75px;
+}
+p {
+  font-size: 50px;
+}
+.create-card {
+  color: white;
+  font-family: "Rochester", cursive;
+  font-size: 35px;
+  width: 200px;
+  height: 50px;
+  background: rgba(233, 32, 32, 0.35);
+  border: none;
+  border-radius: 3px;
+}
