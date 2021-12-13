@@ -15,3 +15,79 @@
   display: none;
 }
 
+:root {
+  --input-background-color: #ccc;
+  --input-background-color-focus: #aaa;
+}
+
+.CreateText {
+  font-family: "Rochester", cursive;
+  /* width: 100vw; */
+  /* height: 100vh; */
+}
+
+.to > h2 {
+  display: flex;
+  gap: 6px;
+}
+.CreateText input[type="text"],
+textarea {
+  font-family: "Rochester", cursive;
+  font-size: 1.5rem;
+  padding: 0 5px;
+  border: none;
+  outline: none;
+  overflow-wrap: inherit;
+  resize: none;
+}
+.CreateText input[type="text"]:focus,
+textarea:focus,
+input[type="text"]:focus-within,
+textarea:focus-within {
+  background: var(--input-background-color-focus);
+}
+
+.message {
+  position: relative;
+  width: fit-content;
+}
+
+#dropdownMenu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: fit-content;
+  background: rgb(160, 160, 160);
+  gap: 1em;
+  color: black;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0 0 2px 2px rgba(10, 10, 10, 0.5);
+}
+#dropdownMenu h4 {
+  margin: 0;
+}
+.item {
+  cursor: pointer;
+  padding: 5px;
+}
+.item:hover,
+.item:focus {
+  background: rgb(180, 180, 180);
+}
+
+.CreateCard {
+  width: 100vw;
+  height: 100vh;
+}
+
+.previewBtn {
+  margin: 10px;
+  background: rgba(233, 32, 32, 0.35);
+  border: none;
+  border-radius: 3px;
+  color: black;
+  font-family: "Rochester", cursive;
+  font-size: 20px;
+}
