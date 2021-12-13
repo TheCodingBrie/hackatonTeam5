@@ -1,11 +1,14 @@
 import CreateText from "./CreateText";
 import { useState, useRef } from "react";
 import html2canvas from "html2canvas";
+import Picture from "./Picture";
+import { NavLink } from "react-router-dom";
 
 const CreateCard = () => {
   const [to, setTo] = useState();
   const printRef = useRef();
   const [messageDropdownShown, setMessageDropdownShown] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
   const handleFocus = (e) => {
     if (e.target.id === "message" || e.target.className.includes("dropdown"))
@@ -19,7 +22,7 @@ const CreateCard = () => {
 
     const data = canvas.toDataURL("card/jpg");
     const link = document.createElement("a");
-
+    //
     if (typeof link.download === "string") {
       link.href = data;
       link.download = "card.jpg";
@@ -31,18 +34,23 @@ const CreateCard = () => {
       window.open(data);
     }
   };
+
   return (
     <div onClick={handleFocus} className="CreateCard">
-      <div ref={printRef}>
-        <CreateText messageDropdownShown={messageDropdownShown} />
+      <NavLink to="/" className="logo"></NavLink>
+      <div className="container">
+        <div className="createBox" ref={printRef}>
+          <CreateText messageDropdownShown={messageDropdownShown} />
+          <Picture showModal={showModal} setShowModal={setShowModal} />
+        </div>
+        <button
+          className="previewBtn"
+          type="button"
+          onClick={handleDownloadImage}
+        >
+          Preview Card
+        </button>
       </div>
-      <button
-        className="previewBtn"
-        type="button"
-        onClick={handleDownloadImage}
-      >
-        Preview Card
-      </button>
     </div>
   );
 };

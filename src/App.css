@@ -91,3 +91,16 @@ textarea:focus-within {
   font-family: "Rochester", cursive;
   font-size: 20px;
 }
+
+.createBox {
+  display: flex;
+  gap: 50px;
+}
+
+.container {
+  border: black 1px solid;
+  margin-left : 100px;
+  padding-left: 20px;
+  padding-top: 30px;
+  width: 80%;
+}
