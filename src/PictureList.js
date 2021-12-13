@@ -17,7 +17,7 @@ export default function PictureList({
 
   function loadImage() {
     const imgParam = "Christmas season";
-    const fetchUrl = `https://loremflickr.com/500/500/${imgParam}`;
+    const fetchUrl = `https://loremflickr.com/800/600/${imgParam}`;
     setIsLoading(true);
     fetch(fetchUrl)
       .then((response) => {
@@ -61,9 +61,9 @@ export default function PictureList({
         style={modalStyles}
         contentLabel="Select picture Modal"
       >
-        <h2 className=""></h2>
+        <h2>Choose a picture</h2>
         <div>{loadContent()}</div>
-        <button onClick={loadImage}>Another random photo</button>
+        <button onClick={loadImage}>Refresh</button>
         <button onClick={handleImage}>Select this photo</button>
       </Modal>
     </div>
