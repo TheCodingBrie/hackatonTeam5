@@ -1,7 +1,19 @@
 import "./App.css";
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <div className="App">
+      <h1>hi</h1>
+    </div>
+  );
 }
 
 export default App;
+
+<landingPage/>
+
+<CreateCard/>
+  <CreateText/>
+  <Picture/>
+    <APIPictureModal/>
+<PreviewCard/>

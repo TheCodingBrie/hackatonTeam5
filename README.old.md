@@ -17,3 +17,14 @@
 - Add text to / next to the picture
 - Save all in jpeg
 - Send by email / save
+
+
+### Components
+
+<landingPage/>
+
+<CreateCard/>
+  <CreateText/>
+  <Picture/>
+    <APIPictureModal/>
+<PreviewCard/>
