@@ -38,19 +38,19 @@ const CreateCard = () => {
   return (
     <div onClick={handleFocus} className="CreateCard">
       <NavLink to="/" className="logo"></NavLink>
-      <div className="container">
-        <div className="createBox" ref={printRef}>
+      <div className="createBox" ref={printRef}>
+        <div className="container">
           <CreateText messageDropdownShown={messageDropdownShown} />
           <Picture showModal={showModal} setShowModal={setShowModal} />
         </div>
-        <button
-          className="previewBtn"
-          type="button"
-          onClick={handleDownloadImage}
-        >
-          Preview Card
-        </button>
       </div>
+      <button
+        className="previewBtn"
+        type="button"
+        onClick={handleDownloadImage}
+      >
+        Preview Card
+      </button>
     </div>
   );
 };
