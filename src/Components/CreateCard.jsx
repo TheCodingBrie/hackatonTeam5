@@ -2,7 +2,7 @@ import CreateText from "./CreateText";
 import { useState, useRef } from "react";
 import html2canvas from "html2canvas";
 
-const CreateCard = ({ messageDropdownShown }) => {
+const CreateCard = () => {
   const [to, setTo] = useState();
   const printRef = useRef();
   const [messageDropdownShown, setMessageDropdownShown] = useState(false);
